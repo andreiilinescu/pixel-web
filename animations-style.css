@@ -1,0 +1,96 @@
+/* underline style */
+.underline ::before {
+  animation-duration: 0.3s;
+  animation-name: hoverLine2;
+  animation-timing-function: ease-in-out;
+  background-color: #defefe;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  transform: translateX(101%);
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  z-index: -10;
+}
+
+.underline :hover::before {
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+  animation-name: hoverLine;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes hoverLine2 {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes hoverLine {
+  0% {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* ---- custom cursor ---- */
+
+.cursor-dot,
+.cursor-dot-outline {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cursor-dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: white;
+}
+
+.cursor-dot-outline {
+  width: 3rem;
+  height: 3rem;
+  border-color: white;
+  border-width: 0.1rem;
+  border-style: solid;
+}
+
+/* arrow before text */
+.arrow {
+  color: white;
+  opacity: 0.4;
+  transition: color 1.25s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.4s linear,
+    transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  text-decoration: none;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.arrow:before {
+  opacity: 0;
+  content: url(/src/arrow.svg);
+  display: inline-block;
+  transform: translateX(-100%);
+  transition: opacity 0.4s linear, transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  height: 0.8vw;
+  width: 0.8vw;
+  margin-right: 0.47vw;
+}
+.arrow:hover:before {
+  transform: translateX(0);
+  opacity: 1;
+}
