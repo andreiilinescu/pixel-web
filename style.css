@@ -45,7 +45,7 @@ nav{
   justify-content: space-between; 
   align-items: center;
   font-family:"Montserrat", Roobert, Helvetica, Roboto, Arial, sans-serif; 
-  z-index: 2;
+  z-index: 10;
 }
 /* logo left */
 nav .logo{
@@ -215,7 +215,7 @@ nav .navigation{
   padding-top:7rem;
   height: 100vh;
   box-sizing: content-box;
-  z-index: 2;
+  z-index: 15;
   position: relative;
   padding-left: 6rem;
   color:black;
@@ -254,6 +254,7 @@ nav .navigation{
   margin-top: 12rem;
   font-size: 1.8rem;
   font-weight: 200;
+  font-family: "Montserrat", Roobert, Helvetica, Roboto, Arial, sans-serif;
 }
 #services .desc .space{
   padding-left: 4rem;
@@ -262,6 +263,7 @@ nav .navigation{
   font-size:  1.5rem;
   font-weight: 300;
   text-transform: uppercase;
+  font-family: "Montserrat", Roobert, Helvetica, Roboto, Arial, sans-serif;
 }
 
 #services .provided-services{

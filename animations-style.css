@@ -95,3 +95,14 @@
   transform: translateX(0);
   opacity: 1;
 }
+
+.fade-in-image { 
+  animation: fadeIn 1s; 
+  opacity: 0;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
