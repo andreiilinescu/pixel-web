@@ -52,7 +52,7 @@ nav .logo{
   font-size: large;
   filter: invert(100%);
   font-weight: 200;
-  margin-left: 5rem;
+  margin-left: 6rem;
   margin-top: 0.5rem;
 
 }
@@ -72,7 +72,7 @@ nav .navigation{
   font-weight: light;
   display: flex;
   gap:3rem;
-  margin-right: 16rem;
+  margin-right: 10rem;
   margin-top: 0.5rem;
   /*margin-left: auto;*/
 }
@@ -89,14 +89,20 @@ nav .navigation{
   font-size: 1rem;
   display: flex;
   flex-direction: row;
+  margin-left: 4rem;
 }
 
 .language .link{
   text-decoration: none ;
-  color: #defefe;
+  color: #afafaf;
   display: inline-block;
   overflow: hidden;
   position: relative;
+  transition: 1s;
+}
+
+.language :hover{
+  color:#efefef !important;
 }
 
 .language .ro .link{
@@ -154,32 +160,24 @@ nav .navigation{
   z-index: -1;
 }
 
-#welcome .triangles-left-svg{
+/* #welcome .triangles-left-svg{
   width:75px;
   position: absolute;
   left: 8.39%;
   bottom: 63px;
   z-index: 1;
   filter: invert(80%);
-}
+} */
 
 #welcome .arrow-scroll{
   position: absolute;
   bottom: 50px;
-  right: 9.40%;
+  right: 0%;
   display: block;
-  margin-right: 15px;
   width: 17px;
   height: 52.5px;
+  margin-right: 10rem;
 }
-
-#name-2 {
-  margin-left: 17.5vh;
-}
-
-
-
-
 
 
 
@@ -212,14 +210,69 @@ nav .navigation{
 
 /* -- Services -- */
 #services{
-  background-color: aliceblue;
+  background-color: #efefef;
   width: 100%;
-  padding:200px 0;
+  padding-top:10rem;
   height: 100vh;
+  box-sizing: content-box;
   z-index: 2;
   position: relative;
+  padding-left: 6rem;
+  color:black;
+
 }
 
+#services .row{
+  display: flex;
+  flex-direction: row;
+}
+
+#services .col-left{
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+}
+
+#services .col-right{
+  display: flex;
+  flex-direction: column; 
+  margin-left: 14rem;
+  margin-right: 15rem;
+}
+
+#services .triangle-logo{
+}
+
+#services .title{
+  font-size: 1.5rem;
+  font-weight: 350;
+}
+
+#services .desc{
+  margin-top: 12rem;
+  margin-left: 40px;
+  font-size: x-large;
+  font-weight: 200;
+}
+#services .desc .space{
+  padding-left: 2rem;
+}
+#services .desc-right{
+  margin-top: 2rem;
+  font-size:  2.5rem;
+  font-weight: 400;
+}
+
+#services .provided-services{
+  margin-left: 3rem;
+  margin-top: 5rem;
+  font-size: 1.4rem;
+  padding-left: 1rem;
+  border-left: 2px  solid  black;
+}
+#services .item{
+  margin-top: 0.4rem;
+}
 
 /* --- Work ---*/
 #work{
