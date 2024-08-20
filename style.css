@@ -234,9 +234,11 @@ nav .navigation{
 }
 
 #services .col-right{
+  padding-left: 3rem;
+  border-left: black solid 1px;
   display: flex;
   flex-direction: column; 
-  margin-left: 14rem;
+  margin-left: 8rem;
   margin-right: 15rem;
 }
 
@@ -244,20 +246,20 @@ nav .navigation{
 }
 
 #services .title{
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: 350;
 }
 
 #services .desc{
   margin-top: 12rem;
-  font-size: x-large;
+  font-size: 1.8rem;
   font-weight: 200;
 }
 #services .desc .space{
-  padding-left: 2rem;
+  padding-left: 4rem;
 }
 #services .desc-right{
-  font-size:  1rem;
+  font-size:  1.5rem;
   font-weight: 300;
   text-transform: uppercase;
 }
@@ -268,12 +270,14 @@ nav .navigation{
 }
 #services .item{
   margin-top: 0.4rem;
+  letter-spacing: 0.25rem;
 }
 
 #services .contact-bubble{
   margin-top:2rem;
   font-size:1.4rem;
 }
+
 
 #services .link{
   color: black;
@@ -288,11 +292,23 @@ nav .navigation{
   padding: 0 2.3rem 0 2rem;
   position: relative;
   z-index: 10;
+  transition: all 1.2s  cubic-bezier(.19,1,.22,1);
+}
+
+#services .contact-bubble :hover{
+  background-color: #000;
+  color:white;
+}
+#services .contact-bubble :hover .arrow-contact{
+
+  filter:invert(0%);
 }
 
   #services .arrow-contact{
     margin-left:0.5rem;
     filter:invert(100%);
+    transition: all 1.2s  cubic-bezier(.19,1,.22,1);
+
   }
 
 /* --- Work ---*/
