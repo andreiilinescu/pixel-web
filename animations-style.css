@@ -51,7 +51,7 @@
   opacity: 0;
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-  z-index: 10;
+  z-index: 50;
 }
 
 .cursor-dot {
@@ -96,13 +96,24 @@
   opacity: 1;
 }
 
-.fade-in-image { 
-  animation: fadeIn 1s; 
+.fade-out-image { 
+  animation: fadeOut 1s; 
   opacity: 0;
 }
 
+.fade-in-image { 
+  animation: fadeIn 0.8s; 
+  opacity: 1;
+}
 
-@keyframes fadeIn {
+
+
+@keyframes fadeOut {
   0% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
