@@ -68,7 +68,7 @@ var cursor = {
             // Position the dot
             self.endX = e.pageX;
             self.endY = e.pageY;
-            self.$dot.style.top = self.endY + 'px';
+            // self.$dot.style.top = self.endY + 'px';
             self.$dot.style.left = self.endX + 'px';
         });
         
@@ -76,14 +76,14 @@ var cursor = {
         document.addEventListener('mouseenter', function(e) {
             self.cursorVisible = true;
             self.toggleCursorVisibility();
-            self.$dot.style.opacity = 1;
+            // self.$dot.style.opacity = 1;
             self.$outline.style.opacity = 1;
         });
         
         document.addEventListener('mouseleave', function(e) {
             self.cursorVisible = true;
             self.toggleCursorVisibility();
-            self.$dot.style.opacity = 0;
+            // self.$dot.style.opacity = 0;
             self.$outline.style.opacity = 0;
         });
     },
@@ -103,10 +103,10 @@ var cursor = {
         var self = this;
         
         if (self.cursorEnlarged) {
-            self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
+            // self.$dot.style.transform = 'translate(-50%, -50%) scale(0.75)';
             self.$outline.style.transform = 'translate(-50%, -50%) scale(1.5)';
         } else {
-            self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
+            // self.$dot.style.transform = 'translate(-50%, -50%) scale(1)';
             self.$outline.style.transform = 'translate(-50%, -50%) scale(1)';
         }
     },
@@ -115,10 +115,10 @@ var cursor = {
         var self = this;
         
         if (self.cursorVisible) {
-            self.$dot.style.opacity = 1;
+            // self.$dot.style.opacity = 1;
             self.$outline.style.opacity = 1;
         } else {
-            self.$dot.style.opacity = 0;
+            // self.$dot.style.opacity = 0;
             self.$outline.style.opacity = 0;
         }
     }
