@@ -133,11 +133,42 @@ nav .navigation {
 }
 
 #welcome .headline {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #defefe;
-  font-weight: 300;
-  letter-spacing: 0.65rem;
-  margin-left: 3rem;
+  font-weight: 400;
+  letter-spacing: -0.05rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 6%;
+  font-family: "Montserrat", "Avenir", "Proxima Nova", "Futura";
+  display: inline-block; /* Keeps the element inline and centered */
+  white-space: nowrap;
+  overflow: hidden;
+  opacity: 0; /* Initially hide the text */
+  width: 0; /* Start with width 0 for typing animation */
+  text-align: center; /* Center-align text within the element */
+  animation: typing 4s 1s 1 normal forwards, fadeIn 4s forwards;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Make the text fully visible */
+  }
+}
+
+#welcome .underheadline {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: lighter;
 }
 
 #welcome .description {
@@ -148,7 +179,7 @@ nav .navigation {
 }
 
 #welcome .triangle {
-  width: 25%;
+  width: 28%;
   height: auto;
   position: absolute;
   margin-left: auto;
@@ -165,10 +196,28 @@ nav .navigation {
   filter: invert(80%);
 } */
 
+@keyframes arrow_scroll_animation {
+  0% {
+    bottom: 5%;
+  }
+  25% {
+    bottom: 7%;
+  }
+  75% {
+    bottom: 7%;
+  }
+  100% {
+    bottom: 5%;
+  }
+}
+
 #welcome .arrow-scroll {
+  animation-name: arrow_scroll_animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
   position: absolute;
-  bottom: 50px;
-  right: 0%;
+  bottom: 5%;
+  right: 0.9%;
   display: block;
   width: 17px;
   height: 52.5px;
@@ -202,7 +251,7 @@ nav .navigation {
 
 /* -- Services -- */
 #services {
-  background-color: #efefef ;
+  background-color: #efefef;
   width: 100%;
   padding-top: 5rem;
   height: 100vh;
@@ -222,6 +271,10 @@ nav .navigation {
   display: flex;
   flex-direction: column;
   white-space: nowrap;
+}
+
+#about_text {
+  font-size: 0.1rem;
 }
 
 #services .col-right {
@@ -261,18 +314,16 @@ nav .navigation {
   margin-top: 4rem;
   font-size: 4rem;
   white-space: nowrap;
-
 }
 #services .item {
   margin-top: 0.4rem;
   letter-spacing: 0.1rem;
-  line-height:  1.2;
+  line-height: 1.2;
   text-transform: lowercase;
-  
+
   font-weight: 400;
   font-family: "Montserrat", Roobert, Helvetica, Roboto, Arial, sans-serif;
 }
-
 
 #services .contact-bubble {
   margin-top: 3rem;
@@ -313,7 +364,7 @@ nav .navigation {
 }
 /* --- About ---*/
 #about {
-  background-color: var(--bg) ;
+  background-color: var(--bg);
   width: 100%;
   padding-top: 5rem;
   height: 100vh;
@@ -329,11 +380,11 @@ nav .navigation {
   font-weight: 350;
 }
 
-#about .mid-triangle{
+#about .mid-triangle {
   filter: invert(100%);
 }
 
-#about .textSection{
+#about .textSection {
   width: 100%;
   height: 100vh;
 }
@@ -345,28 +396,26 @@ nav .navigation {
   height: 100%;
   display: flex;
   align-items: center;
-  color:#ababab;
+  color: #ababab;
 }
 
-#about .wrapper{
+#about .wrapper {
   font-size: 5rem;
 }
-#about .white{
-
+#about .white {
 }
 
-#about .bg-right{
+#about .bg-right {
   position: absolute;
   z-index: -5;
   width: 100%;
   height: 100%;
-
 }
-#about .bg-right img{
+#about .bg-right img {
   position: absolute;
   z-index: -5;
-  right:0%;
-  top:-50%;
+  right: 0%;
+  top: -50%;
 }
 
 /* --- Work ---*/
@@ -550,7 +599,7 @@ section .scroll {
 
 #footer .email {
   font-size: 1.6rem;
-  margin-top: 1vh;
+  margin-top: 7vh;
   opacity: 0.8;
   white-space: nowrap;
 }
