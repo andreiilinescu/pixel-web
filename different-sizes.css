@@ -1,8 +1,27 @@
-@media only screen and (min-width: 901px) and (max-width: 1350px) {
-  #work {
-    font-size: large;
-    height: 95vh;
+@media only screen and (min-width: 1101px) and (max-width: 1350px) {
+  nav .logo img{
+    width: 160px;
   }
+  #welcome .headline{
+    font-size: 2.8rem;
+  }
+  #welcome .underheadline {
+    font-size: 1rem;
+  }
+  #welcome .triangle{
+    width: 33%;
+  }
+
+  #services{
+    padding:0;
+    margin: 0;
+    font-size: 110%;
+  }
+
+  #services .col-right{
+    margin-right: 4rem;
+  }
+
   #footer {
     padding-bottom: 3vh;
   }
@@ -28,11 +47,113 @@
   }
 }
 
-@media only screen and (min-width: 760px) and (max-width: 900px) {
-  #work {
-    font-size: medium;
-    height: 95vh;
+@media only screen and (min-width: 901px) and (max-width: 1100px) {
+  :root{
+    font-size: 13px;
   }
+  nav .logo img{
+    width: 140px;
+  }
+  nav .navigation{
+    margin-right: 6rem;
+  }
+  #welcome .headline{
+    font-size: 2.6rem;
+  }
+
+  #welcome .underheadline {
+    font-size: 1.1rem;
+  }
+
+  #welcome .triangle{
+    width: 36%;
+  }
+
+  #services{
+    padding:0;
+    margin: 0;
+    font-size: 103%;
+
+  }
+
+  #services .col-right{
+    margin-right: 1rem;
+    margin-left: 6rem;
+  }
+
+
+
+
+  #footer {
+    padding-bottom: 3vh;
+  }
+  #footer .headline {
+    font-size: 3rem;
+    margin-left: 5vw;
+  }
+  #footer .content {
+    margin-left: 5vw;
+  }
+  #footer .col-left {
+    width: 35%;
+  }
+  #footer .email {
+    font-size: 1.2rem;
+  }
+  #footer .email a::after {
+    width: 1vw;
+    height: 1vw;
+  }
+  #footer .links {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 900px) { 
+  nav .logo img{
+    width: 140px;
+  }
+
+  nav .language {
+    margin-left: 2rem;
+  }
+  
+  nav .navigation{
+    margin-right: 4rem;
+  }
+
+  .language .ro .link {
+    margin-right: 0.8rem;
+    padding-right: 0.8rem;
+    
+  }
+  #welcome .headline{
+    font-size: 2.6rem;
+  }
+
+  #welcome .underheadline {
+    font-size: 1.1rem;
+  }
+
+  #welcome .triangle{
+    width: 44%;
+  }
+
+  #services{
+    padding:0;
+    margin: 0;
+    font-size: 94%;
+
+  }
+
+  #services .col-right{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 2rem;
+
+  }
+
+
   #footer {
     padding-bottom: 3vh;
   }
@@ -59,19 +180,145 @@
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 759px) {
-  #work {
-    font-size: medium;
-    height: 100vh;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+@media only screen and (min-width: 600px) and (max-width: 759px) {
+  nav .logo img{
+    width: 140px;
   }
-  #work .work-column {
-    padding-top: 3vh;
-    padding-left: 5vw;
+
+  nav .language {
+    margin-left: 2rem;
   }
+  
+  nav .navigation{
+    margin-right: 4rem;
+  }
+
+  .language .ro .link {
+    margin-right: 0.8rem;
+    padding-right: 0.8rem;
+    
+  }
+
+  #welcome .headline{
+    font-size: 2.6rem;
+  }
+
+  #welcome .underheadline {
+    font-size: 1.1rem;
+  }
+
+  #welcome .triangle{
+    width: 44%;
+  }
+
+
+  #services .col-left{
+    flex-direction: row;
+    margin-bottom: 4rem;
+  }
+
+  #services .desc{
+    margin-top: 2rem;
+    width: 100%;
+    text-align: right;
+  }
+
+  #services .col-right{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 2rem;
+    border: none;
+  }
+
+
+
+
+  #footer {
+    padding-bottom: 3vh;
+  }
+  #footer .headline {
+    font-size: 2.2rem;
+    margin-left: 4vw;
+  }
+  #footer .content {
+    margin-left: 4vw;
+  }
+  #footer .col-left {
+    width: 30%;
+  }
+  #footer .email {
+    font-size: 1rem;
+  }
+  #footer .email a::after {
+    display: none;
+  }
+
+  #footer .links {
+    width: auto;
+  }
+
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 599px) {
+
+  
+  nav .logo img{
+    width: 150px;
+  }
+
+  nav .language {
+    margin-left: 2rem;
+  }
+  
+  nav .navigation{
+    margin-right: 4rem;
+  }
+  nav .underline{
+    display: none;
+  }
+  .language .ro .link {
+    margin-right: 0.8rem;
+    padding-right: 0.8rem;
+    
+  }
+
+  #welcome .headline{
+    font-size: 2.2rem;
+  }
+
+  #welcome .underheadline {
+    font-size: 0.9rem;
+  }
+
+  #welcome .triangle{
+    width: 48%;
+  }
+
+  #services{
+    padding:0;
+    margin: 0;
+    font-size: 88%;
+
+  }
+  #services .col-left{
+    flex-direction: row;
+    margin-bottom: 4rem;
+  }
+
+  #services .desc{
+    margin-top: 2rem;
+    width: 100%;
+    text-align: right;
+  }
+
+  #services .col-right{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 2rem;
+    border: none;
+  }
+
   #footer {
     padding-bottom: 3vh;
   }
@@ -102,18 +349,81 @@
 }
 
 @media only screen and (min-width: 385px) and (max-width: 499px) {
-  #work {
-    font-size: medium;
-    height: 100vh;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 9vh;
-    padding-bottom: 15vh;
+  nav .logo img{
+    width: 150px;
   }
-  #work .work-column {
-    padding-top: 3vh;
-    padding-left: 5vw;
+
+  nav .logo{
+    margin-left: 2rem;
   }
+
+  nav .language {
+    margin-left: 2rem;
+  }
+  
+  nav .navigation{
+    margin-right: 2rem;
+  }
+  .language .ro .link {
+    margin-right: 0.8rem;
+    padding-right: 0.8rem;
+    
+  }
+
+  #welcome .headline{
+    font-size: 2.3rem;
+  }
+
+  #welcome .underheadline {
+    font-size: 1rem;
+  }
+
+  #welcome .triangle{
+    width: 60%;
+  }
+
+  #welcome .arrow-scroll{
+    right: 8%;
+  }
+
+  #services{
+    padding:0;
+    margin: 0;
+    font-size: 70%;
+    overflow: hidden;
+
+  }
+  #services .title{
+    margin-left: 1rem;
+
+  }
+  #services .triangle-logo {
+    width: 13px;
+  }
+  #services .col-left{
+    flex-direction: row;
+    margin-bottom: 4rem;
+    padding-right: 1rem;
+  }
+
+  #services .desc{
+    margin-top: 2rem;
+    width: 100%;
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+  #services .col-right{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 2rem;
+    border: none;
+  }
+  #services .arrow-contact {
+    width:14px;
+  }
+
+
   #footer {
     padding-bottom: 3vh;
   }
@@ -148,32 +458,75 @@
     font-size: 1.5rem;
   }
 
-  #welcome h1 {
-    font-size: 4rem;
-  }
-
-  #name-1 {
-    margin-right: 0;
-  }
-
-  #name-2 {
-    margin-left: 0;
-  }
 }
 
 @media only screen and (min-width: 345px) and (max-width: 384px) {
-  #work {
-    font-size: small;
-    height: 100vh;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 9vh;
-    padding-bottom: 15vh;
+  nav .logo img{
+    width: 150px;
   }
-  #work .work-column {
-    padding-top: 3vh;
-    padding-left: 5vw;
+
+  nav .logo{
+    margin-left: 2rem;
   }
+
+  nav .language {
+    margin-left: 2rem;
+  }
+  
+  nav .navigation{
+    margin-right: 2rem;
+  }
+  .language .ro .link {
+    margin-right: 0.8rem;
+    padding-right: 0.8rem;
+    
+  }
+
+  #welcome .headline{
+    font-size: 2rem;
+  }
+
+  #welcome .underheadline {
+    font-size: 0.8rem;
+  }
+
+  #welcome .triangle{
+    width: 60%;
+  }
+
+  #welcome .arrow-scroll{
+    right: 8%;
+  }
+
+
+  #services{
+    font-size: 63%;
+  }
+
+  #services .triangle-logo {
+    width: 13px;
+  }
+
+  #services .desc{
+    margin-top: 2rem;
+    width: 100%;
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+  #services .col-right{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border: none;
+  }
+
+  #services .arrow-contact {
+    width:14px;
+  }
+
+
+
   #footer {
     padding-bottom: 3vh;
   }
@@ -209,32 +562,75 @@
     font-size: 1.5rem;
   }
 
-  #welcome h1 {
-    font-size: 4rem;
-  }
 
-  #name-1 {
-    margin-right: 0;
-  }
-
-  #name-2 {
-    margin-left: 0;
-  }
 }
 
 @media only screen and (max-width: 344px) {
-  #work {
-    font-size: small;
-    height: 100vh;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-top: 9vh;
-    padding-bottom: 15vh;
+  nav .logo img{
+    width: 120px;
   }
-  #work .work-column {
-    padding-top: 3vh;
-    padding-left: 5vw;
+
+  nav .logo{
+    margin-left: 1rem;
   }
+
+  nav .language {
+    margin-left: 1rem;
+  }
+  
+  nav .navigation{
+    margin-right: 1rem;
+  }
+  .language .ro .link {
+    margin-right: 0.8rem;
+    padding-right: 0.8rem;
+    
+  }
+  #welcome .headline{
+    font-size: 1.7rem;
+  }
+
+  #welcome .underheadline {
+    font-size: 0.6rem;
+  }
+
+  #welcome .triangle{
+    width: 60%;
+  }
+
+  #welcome .arrow-scroll{
+    width: 13px;
+    height: auto;
+    right: 8%;
+  }
+
+  #services {
+    font-size: 55%;
+  }
+
+  #services .triangle-logo {
+    width: 13px;
+  }
+
+
+  #services .desc{
+    margin-top: 2rem;
+    width: 100%;
+    text-align: right;
+    margin-right: 2rem;
+  }
+
+  #services .col-right{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    border: none;
+  }
+  #services .arrow-contact {
+    width:11px;
+  }
+
+
   #footer {
     padding-bottom: 3vh;
   }
@@ -270,23 +666,98 @@
     font-size: 1.5rem;
   }
 
-  #welcome h1 {
-    font-size: 3.5rem;
-  }
-  #info .service-subtitle {
-    font-size: 0.9rem;
-  }
-  #name-1 {
-    margin-right: 0;
-  }
-
-  #name-2 {
-    margin-left: 0;
-  }
 }
 
-@media only screen and (max-width: 768px) {
+
+
+
+
+
+@media only screen and (max-width: 370px) {
+  nav .underline{
+    display: none;
+  }
   #gradient-canvas {
     display: none;
   }
+  #services{
+    padding:0;
+    margin: 0;
+    overflow: hidden;
+    height: fit-content;
+  }
+  
+  #services .row{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    transform: none;
+    left: auto!important;
+    top: auto!important;
+  }
+
+  #services .title{
+    margin-left: 1rem;
+
+  }
+
+  #services .col-left{
+    flex-direction: row;
+    margin-bottom: 4rem;
+    padding-right: 1rem;
+  }
+}
+
+
+
+
+@media only screen and (max-width: 760px) {
+  nav .underline{
+    display: none;
+  }
+  #gradient-canvas {
+    display: none;
+  }
+
+  #services .row{
+    flex-direction: column;
+  }
+}
+
+
+@media only screen and (max-width: 1350px) {
+  html{
+    font-size: smaller;
+  }
+
+ 
+}
+
+@media only screen and (max-width: 1650px) {
+  #services .row{
+    left:50%;
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  #services .row{
+    left:46%;
+  }
+
+  #services{
+    font-size: 120%;
+  }
+}
+
+
+@media only screen and (max-width:2000px) {
+  #footer{
+    display: none;
+  }
+
+  #info{
+    display: none;
+  }
+
+  
 }
