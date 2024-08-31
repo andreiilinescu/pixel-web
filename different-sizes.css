@@ -1,3 +1,29 @@
+@media only screen and (min-width: 1351px) and (max-width: 1600px) {
+  #footer {
+    padding-bottom: 3vh;
+  }
+  #footer .headline {
+    font-size: 2.5rem;
+    margin-left: 2vw;
+  }
+  #footer .content {
+    margin-left: 3vw;
+  }
+
+  #footer .email {
+    font-size: 1.2rem;
+  }
+  #footer .email a::after {
+    width: 1vw;
+    height: 1vw;
+  }
+  #footer .links {
+    width: auto;
+  }
+}
+
+
+
 @media only screen and (min-width: 1101px) and (max-width: 1350px) {
   nav .logo img{
     width: 160px;
@@ -82,6 +108,17 @@
   }
 
 
+  #about  .wrapper {
+    font-size:4.3em;
+  }
+
+  #about .bg-right img{
+    width: 900px;
+  }
+
+  #info{
+    font-size: 14px;
+  }
 
 
   #footer {
@@ -152,6 +189,20 @@
     padding-left: 2rem;
 
   }
+
+
+  #about  .wrapper {
+    font-size:4em;
+  }
+
+  #about .bg-right img{
+    width: 800px;
+  }
+
+  #info{
+    font-size: 12px;
+  }
+
 
 
   #footer {
@@ -230,7 +281,19 @@
     border: none;
   }
 
+  
+  #about  .wrapper {
+    font-size:3.8em;
+  }
 
+  #about .bg-right img{
+    width: 800px;
+    left:40%;
+  }
+
+  #info{
+    font-size: 12px;
+  }
 
 
   #footer {
@@ -319,6 +382,20 @@
     border: none;
   }
 
+  #about  .wrapper {
+    font-size:3.6em;
+  }
+
+  #about .bg-right img{
+    width: 700px;
+    left:40%;
+  }
+
+  
+  #info{
+    font-size: 11px;
+  }
+
   #footer {
     padding-bottom: 3vh;
   }
@@ -343,9 +420,7 @@
     width: auto;
   }
 
-  #welcome h1 {
-    font-size: 4rem;
-  }
+
 }
 
 @media only screen and (min-width: 385px) and (max-width: 499px) {
@@ -422,7 +497,27 @@
   #services .arrow-contact {
     width:14px;
   }
+  #about{
+    padding-left: 2em;
+    padding-top: 2em;
+  }
+  #textSection{
+    display: flex;
+  }
+  #about  .wrapper {
+    font-size:3.75em;
+  }
 
+  #about .bg-right img{
+    width: 600px;
+    left:50%;
+    top: 40%;
+  }
+
+  
+  #info{
+    font-size: 10px;
+  }
 
   #footer {
     padding-bottom: 3vh;
@@ -525,7 +620,34 @@
     width:14px;
   }
 
+  #about{
+    padding-left: 2em;
+    padding-top: 2em;
+  }
+  #textSection{
+    display: flex;
+  }
+  #about  .wrapper {
+    font-size:3.4em;
+  }
 
+  #about .bg-right img{
+    width: 600px;
+    left:50%;
+    top: 40%;
+  }
+
+  #info{
+    font-size: 10px;
+    padding-bottom: 8em;
+  }
+  .services-item {
+    margin-bottom: 4em;
+  }
+
+  .services-inner .service-subtitle{
+    font-size: 1.7em;
+  }
 
   #footer {
     padding-bottom: 3vh;
@@ -611,7 +733,9 @@
   #services .triangle-logo {
     width: 13px;
   }
-
+  .services-inner .service-subtitle{
+    font-size: 1.6em;
+  }
 
   #services .desc{
     margin-top: 2rem;
@@ -628,6 +752,30 @@
   }
   #services .arrow-contact {
     width:11px;
+  }
+  #about{
+    padding-left: 2em;
+    padding-top: 2em;
+  }
+  #textSection{
+    display: flex;
+  }
+  #about  .wrapper {
+    font-size:3.4em;
+  }
+
+  #about .bg-right img{
+    width: 500px;
+    left:40%;
+    top: 40%;
+  }
+
+  #info{
+    font-size: 10px;
+    padding-bottom: 8em;
+  }
+  .services-item {
+    margin-bottom: 4em;
   }
 
 
@@ -709,9 +857,18 @@
 }
 
 
-
-
+@media only screen and (min-width: 850px){
+  .phone{
+    display: none;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .desktop{
+    display: none;
+  }
+}
 @media only screen and (max-width: 760px) {
+ 
   nav .underline{
     display: none;
   }
@@ -750,14 +907,73 @@
 }
 
 
-@media only screen and (max-width:2000px) {
-  #footer{
-    display: none;
+
+
+/* --- Height --- */
+@media only screen and (max-height:900px) and (min-height: 801px) {
+    #about{
+      font-size: 12px;
+    }
+    #about .container{
+      margin-top: 3vh;
+    }
+}
+
+@media only screen and (max-height:800px) and (min-height: 701px){
+  #about{
+    font-size: 10px;
+  }
+  #about .container{
+    margin-top: 3vh;
+  }
+}
+
+@media only screen and (max-height:700px) and (min-height: 601px) {
+  #about{
+    font-size: 9px;
+  }
+  #about .container{
+    margin-top: 2vh;
+  }
+}
+
+
+@media only screen and (max-height:600px) and (min-height: 501px){
+  #about{
+    font-size: 8px;
+  }
+  #about .container{
+    margin-top: 2vh;
   }
 
-  #info{
-    display: none;
+}
+
+
+@media only screen and (max-height:500px)and (min-height: 401px) {
+  #about{
+    font-size: 6.5px;
+  }
+  #about .container{
+    margin-top: 2vh;
   }
 
-  
+
+  #about .bg-right img{
+    width: 600px;
+  }
+}
+
+
+@media only screen and (max-height:400px)and (min-height: 301px) {
+  #about{
+    font-size: 5px;
+  }
+  #about .container{
+    margin-top: 1vh;
+  }
+
+
+  #about .bg-right img{
+    width: 600px;
+  }
 }
