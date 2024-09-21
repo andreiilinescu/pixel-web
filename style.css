@@ -163,7 +163,7 @@ nav .navigation {
 #welcome .underheadline {
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 #welcome .triangle {
@@ -395,7 +395,7 @@ nav .navigation {
   height: 100%;
   display: flex;
   align-items: center;
-  color: #ababab;
+  color: #5e5e5e;
 }
 
 #about .wrapper {

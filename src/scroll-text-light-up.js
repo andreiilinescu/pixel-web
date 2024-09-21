@@ -1,13 +1,16 @@
 console.clear()
 
-gsap.registerPlugin(SplitText);
 gsap.registerPlugin(ScrollTrigger);
 gsap.config({trialWarn: false});
 
 
-const split = new SplitText(".wrapper p", {
-  type: "chars",
-});
+// const split = new SplitText(".wrapper p", {
+//   type: "chars",
+// });
+
+const split = new SplitType('#target', { types: 'chars' })
+
+console.log(split);
 
 const tl  = gsap.timeline({
   scrollTrigger: {

@@ -866,6 +866,14 @@
   .desktop{
     display: none;
   }
+
+  .cursor-dot{
+    display: none;
+  }
+
+  .cursor-dot-outline{
+    display: none;
+  }
 }
 @media only screen and (max-width: 760px) {
  
