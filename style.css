@@ -143,6 +143,7 @@ nav .navigation {
   width: 0; /* Start with width 0 for typing animation */
   text-align: center; /* Center-align text within the element */
   animation: typing 4s 1s 1 normal forwards, fadeIn 4s forwards;
+  margin-bottom:20px;
 }
 
 @keyframes typing {
